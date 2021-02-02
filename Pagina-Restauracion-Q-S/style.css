@@ -1,0 +1,314 @@
+			
+			@import url('https://fonts.googleapis.com/css2?family=Asap&family=Roboto:ital,wght@1,300&display=swap');
+			body {
+				margin: 0;
+				font-size: 100%;
+				/*font-style:"Helvetica", "ptserif",  "Tahoma", "Geneva", "Arial", sans-serif;*/
+				font-family:  'Asap',Helvetica, sans-serif;
+				background-color: #FFFFFF;
+
+			}
+
+			nav{
+				margin-bottom: 15px;
+				background-color: #000000;
+
+			}
+
+
+			ul{
+				list-style-type:none;
+				padding-inline-start: 0px !important;
+
+			}
+			
+			#icono_menu{
+				border:none !important;
+				color: white;
+
+			}
+			nav {
+				justify-content: center;
+				display: flex;
+			}
+			.chica>ul {
+				list-style-type: none;
+				display: flex;
+				margin: 0;
+				padding: 0;
+				justify-content: center;
+			}
+			a {
+				text-decoration: none;
+				display: block;
+
+			}
+			a:active, a:link, a:visited {
+				color: #fff;
+				
+			}
+			.columnas_menu{
+				display: flex;
+			}
+
+
+
+			#margen_foto_menu{ /* margen que tendrán las imagenes del despegable del menu*/
+				margin: 20px;
+			}
+
+			#mainmenu > li {
+				text-align: center;
+				color:black;
+	
+				padding: 20px 20px 0px 20px;
+
+			}
+
+			/*id que contiene el menu sin desplegar*/
+			#mainmenu {
+				position: relative;
+				display: flex;
+				align-content: center;
+			}
+			.columna_menu{
+				flex: 50%;
+			}
+			.dropdown, #active{
+				margin: 0px 150px 0px 0px !important;
+
+			}
+
+			#active {/*pagina en la que estamos actualmente*/
+				border-bottom: solid;
+				border-color: white;
+			}
+			/*efectos hover menu*/
+
+			.columnas_menu > div > li:hover{
+
+				background-color: #e10339;
+			}
+			.dropdown-content_imagenes:hover{
+				background-color: #e10339;
+			}
+
+ 			#ajustar{ /* para que se me vaya el cuadro de las imagenes del menu hacia la izqda*/
+ 				right: 50px !important;
+ 			}
+
+
+			.logo{ /*propiedades del logo*/ 
+				width: 10%;
+				padding: 40px 100px 0px 0px;
+				margin-right: 100px;
+				margin-left: 0px;
+				position: left;
+				align-content: left;
+			
+			}
+
+
+			.logo>img{
+
+				min-width: 150px;
+				width: 150px;
+				height: auto;
+				max-width: 100%;
+
+			}
+			.enlaces_menu{
+				color: black !important;
+				padding: 15px;
+
+			}
+
+			.chica>li{
+				margin: 40px 20px 0px 10px;
+			}
+
+			.flexible{
+				display: flex;
+
+			}	
+			.header{
+				width: 100%;
+				height: 75px;
+				background-color: black;
+				color: #A1A9AA;
+				text-align: center;
+			}
+
+			/* inicio*/
+
+			#servicios{
+
+				width: 50%;
+				height: 600px;
+			
+			}
+			#interior{
+				font-size: 20px;
+				width: 80%;
+				margin:100px 0px 0px 150px;
+				text-align: left;
+			}
+
+			#sobreNosotros{
+				width: 50%;
+				height: 600px;
+				text-align: center;
+			}
+			#titulo{
+				color: #02BDC8;
+			}
+
+			/* Nuestros servicios*/
+
+			.espacioFotos{
+				width: 50%;
+				justify-content: center;
+				align-content: center;
+				text-align: center;
+			}
+
+			.descripcionServicio{
+				width: 50%;
+				text-align: left;
+				margin-top: 10%;
+
+			}
+
+			.descripcionServicioIzqda{
+				width: 50%;
+				text-align: left;
+				margin-top: 10%;
+				margin-left: 20%;
+
+			}
+				.espacioFotosIzqda{
+				width: 50%;
+	
+				text-align: left;
+			}
+
+			.icono{
+
+				font-size: 300px;
+				margin:auto;
+				margin-top: 10%;
+				color:#02BDC8;
+			}
+
+			/*Sobre nosotros*/
+
+			#nosotros{
+
+				font-size: 20px;
+				width: 70%;
+				margin: 70px 0px 0px 100px;
+				text-align: left;
+
+			}
+
+			#valores{
+				margin-bottom: 100px;
+			}
+
+			.tituloLista{
+					color: #02BDC8;
+					display: inline;
+
+			}
+			i{
+				display: flex;
+			}
+
+			#correo{
+				width: 50%;
+				height: 600px;
+				justify-content: center !important;
+				
+
+			}
+			#text-correo {
+				width: 100%;
+				margin-top: 5%;
+				text-align: center;
+			}
+			#text-correo>i{
+
+				font-size: 50px;
+			}
+			form{
+				margin: 100px 0px 0px 150px;
+			}
+
+			.formulario{
+
+				width: 75%;
+				display: block;
+				height: 50px;
+				margin-bottom: 4%;
+
+			}
+			label{
+				margin-bottom: 2%;
+			}
+
+			#message{
+
+				width: 75%;
+				height: 60px;
+				display: block;
+				margin-bottom: 2%;
+				border-radius: 10px;
+
+			}
+			
+			#contacto{
+
+				width: 50%;
+				height: 600px;
+				align-content: center;
+				margin-top:7px;
+				text-align: center;
+
+
+			}
+
+			#contacto>iframe{
+
+				margin-top: 10%;
+			}
+			.button {
+
+				  background-color: #02BDC8;
+				  border: none;
+				  color: white;
+				  padding: 15px 32px;
+				  text-align: center;
+				  text-decoration: none;
+				  display: inline-block;
+				  font-size: 16px;
+				  margin: 4px 0px;
+				  cursor: pointer;
+				   transition-delay: 0.1s;
+				  border-radius: 200px;
+			}
+
+			.button:hover{
+				background-color: white;
+				border: 1px solid #02BDC8;
+				color: #02BDC8;
+
+			}
+
+			#localizacion{
+
+				align-content: center;
+				text-align: center;
+				margin-top: 5%;
+				margin-bottom: 8%;
+			}
+

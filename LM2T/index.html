@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--metadatos-->
+		<meta name="description" content="esta es la página de las prácticas del segundo trimestre de lenguaje de marcas" />
+		<meta name="generator" content="Joomla! - Open Source Content Management" />
+		<title>Home</title>
+		<link  rel="icon" href="images/cohete.JPEG" type="image/JPEG"/> <!-- para el icono del titulo-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+		
+		<style>
+			@import url('https://fonts.googleapis.com/css?family=Asap&display=swap'); /*importacion para la letra*/
+			body {
+				margin: 0;
+				font-size: 100%;
+				font-style: "ptserif", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+				background-color: black;
+
+			}
+			.grisclaro{ /*color gris claro*/
+				color: #888;
+			}
+
+			.grisa{ /*color gris mas claro aun*/
+				color: #aaa;
+			}
+			.color7{
+				color:#717070;	
+			}
+
+			ul{
+				list-style-type:none;
+				padding-inline-start: 0px !important;
+
+			}
+			/*div 1, menu*/
+			#icono_menu{
+				border:none !important;
+				color: white;
+
+			}
+			nav {
+				justify-content: center;
+				display: flex;
+			}
+			.chica>ul {
+				list-style-type: none;
+				display: flex;
+				margin: 0;
+				padding: 0;
+				justify-content: center;
+			}
+			a {
+				text-decoration: none;
+				display: block;
+
+			}
+			a:active, a:link, a:visited {
+				color: #fff;
+				
+			}
+			.dropdown-content, .dropdown-content_imagenes {
+				display: none;
+				position: absolute;
+				z-index: 1;
+				background-color: white;
+				border-radius: 25px;
+ 				color: black !important;
+ 				text-align: left;
+ 				transition: 0.5s;
+
+			}
+			.columnas_menu{
+				display: flex;
+			}
+
+			/* efectos para que las esquinas se redondeen*/
+			#primero{
+
+				border-radius: 25px 25px 0px 0px;
+			}
+
+			#ultimo{
+				border-radius: 0px 0px 25px 25px;
+			}
+			#arriba_izqda{
+				border-radius: 25px 0px 0px 0px !important;
+			}
+			#abajo.izqda{
+				border-radius: 0px 0px 25px 0px;
+			}
+
+
+			#margen_foto_menu{ /* margen que tendrán las imagenes del despegable del menu*/
+				margin: 20px;
+			}
+
+			#mainmenu > li {
+				text-align: center;
+				color:black;
+				font-family: "asap", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+				padding: 20px 20px 0px 20px;
+
+			}
+
+
+			.dropdown:hover .dropdown-content ,  .dropdown:hover .dropdown-content_imagenes{ /*efecto para que se vea el menu*/
+				display: block;
+			}
+			.dropdown:hover .fa-angle-up {
+				display: inline;
+			}
+
+			/*id que contiene el menu sin desplegar*/
+			#mainmenu {
+				position: relative;
+				display: flex;
+				align-content: center;
+			}
+			.columna_menu{
+				flex: 50%;
+			}
+			.dropdown, .active{
+				margin: 0px 150px 0px 0px;
+
+			}
+
+			.active {/*pagina en la que estamos actualmente*/
+				border-bottom: solid;
+				border-color: white;
+			}
+			/*efectos hover menu*/
+			 .dropdown-content>li >a:hover {
+ 			 background-color: #e10339;
+			}
+			.columnas_menu > div > li:hover{
+
+				background-color: #e10339;
+			}
+			.dropdown-content_imagenes:hover{
+				background-color: #e10339;
+			}
+
+ 			#ajustar{ /* para que se me vaya el cuadro de las imagenes del menu hacia la izqda*/
+ 				right: 50px !important;
+ 			}
+
+
+			.logo{ /*propiedades del logo*/ 
+				width: 10%;
+				padding: 40px 100px 0px 0px;
+				margin-right: 100px;
+				margin-left: 0px;
+				position: left;
+				align-content: left;
+			
+			}
+
+
+			.logo>img{
+
+				min-width: 150px;
+				width: 150px;
+				height: auto;
+				max-width: 100%;
+
+			}
+			.enlaces_menu{
+				color: black !important;
+				padding: 15px;
+
+			}
+
+			.chica>li{
+				margin: 40px 20px 0px 10px;
+			}
+
+			/* div 1 debajo del menu*/
+			.chica{
+				width: 100%;
+				height: 800px;
+				background-image: url("./images/Chica.JPG");
+				background-size: cover;
+				font-family: "asap", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+
+			}
+			.Enlace_texto{
+				padding: 300px 0px 40px 65px;
+				font-size: 25px;
+			}
+			.texto1{
+
+				color: #717070;
+				padding: 0px 0px 10px 65px;
+
+			}
+			.Enlace_rojo{
+			color: #CC2929;
+			padding: 0px 0px 0px 65px;
+
+			}
+			.Enlace_rojo:hover{
+				color: white !important;
+			}
+
+			/*div dos*/
+
+			#degradado{
+				font-family: "asap", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+				width: 100%;
+				height: 700px;
+				background-image: url("./images/degradado.png");
+				display: flex;
+			}
+
+			/*div que contiene la parte donde esta la foto del hombre*/
+			#parte_hombre{
+				width: 50%;
+				height: 700px;	
+			}
+			/*propiedades foto del hombre*/
+			.Imagen_hombre{
+				padding: 75px 0px 0px 75px;
+				width: 90%;
+				height: 625px;
+			}
+			/*parte del texto del div 2*/
+			.texto_degradado{
+				width: 30%;
+				height: 700px;	
+				text-align: left;
+				margin: 75px 0px 0px 120px;				
+			}
+			.texto_degradado >h2{
+				margin-bottom: 50px;
+				font-size: 120%;
+				color: #888;
+			}
+			.texto_degradado >p{
+				margin-bottom: 50px;
+				font-size: 150%;
+
+			}
+			/* div 3*/
+			#ordenador{
+				width: 100%;
+				height: 650px;
+				text-align: center;
+				font-family: "asap", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+				align-content: center;
+				background-color: black;
+				
+
+			}
+			.texto_blanco{
+
+				font-size: 20px;
+				color: white;
+			}
+			.contenido{
+			display: flex !important;
+
+			}
+			/*contenido de la parte derecha del div */
+			.alineacion_derecha{
+				width: 33%;
+				height: 200px;
+				color: white;
+				margin: 60px 80px 0px 0px;
+				text-align: right;
+
+
+			}
+
+			#flexible{
+				display: flex;
+			}
+			/*contenido columna del medio div 3*/
+			.imagen_ordenador{
+				width: 33%;
+				height: 200px;
+				display: flex;
+				align-content: center;
+
+			}
+			/*propiedades y estilos del boton*/
+			.button { 
+				  border-radius: 20px;
+				  background-color: transparent; /*con esta propiedad hacemos el fondo transparente*/
+				  padding: 10px 20px;
+				  text-align: center;
+				  margin: 400px 130px;
+				  position: absolute;
+				  transition-duration: 0.4s;
+				  cursor: pointer;
+				  font-size: 14px;
+			}
+			.boton_rojo{
+				color: white;
+				border-color: white;
+			}
+			.boton_rojo:hover, .boton_negro:hover{ /*efectos hover del boton*/
+				color: #e10339 !important;
+				border-color: #e10339 !important;
+			}
+
+			.boton_negro{
+				color: black;
+				border-color: black;
+			}
+
+			/*parte derecha del div 3*/
+			.alineación_izqda{
+				width: 33%;
+				height: 450px;
+				color: white;
+				margin: 60px 0px 0px 0px;
+				text-align: left;
+
+
+			}
+			/*div 4*/
+
+			#fotos{
+				width: 100%;
+				height: 700px;
+				background-image: url("./images/fondo rojo.JPG");
+				background-size: cover;
+				display: flex;
+			}
+
+			.texto5{ /*parte del texto del div 4*/
+				margin-top: 300px;
+				width: 50%;
+				height: 700px;
+				text-align: left;
+			}
+
+			.letra_Texto5{
+				margin: 0px 200px 20px 160px;
+			}
+			/*parte de la foto del div 4*/
+			.hombre_fotos{
+				width: 30%;
+				height: 400px;
+				transform: rotate(3deg); /* Standard syntax */
+				background-image: url("./images/Hombre_fotos.JPG");	
+				background-size: cover;
+				margin: 180px 0px 0px 0px;
+
+			}
+
+			#titulaso{ /*id que le pondremos a los div de los titutols*/
+				width: 100%;
+				height:300px !important;
+				margin-top: 0px;/*al tener el h1 margen, se me crea un espacio. con esto lo soluciono*/
+				background-color: white;
+				text-align: center;
+	
+			}
+			#titulaso >h1{
+				font-size:  110px;
+
+			}
+			/*div 5*/
+			.contenido_columnas{
+				  font-family: "ptserif", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+				background-color: white;
+				width: 100%;
+				height: 1300px;
+				display: flex;
+			}
+
+			.columna_izqda{
+				margin-left: 200px;
+				display: flex;
+				flex-direction: column;
+				width: 50%;
+			}
+			.columna{
+				display: flex;
+				flex-direction: column;
+				width: 50%;
+
+				
+			}
+			.enlace_fotos{
+				text-decoration: none;
+				color:black;
+
+			}
+			/*div 6*/
+			.opiniones{
+			font-family: "ptserif", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+			width: 100%;
+			height: 900px;
+			background-color: white;	
+			}
+			#titulo_clientes{
+				font-size: 100px;
+				margin:0px 0px 100px 200px;
+			}
+
+
+			#opiniones_flexibles{
+				width: 100%;
+				height: 300px;
+				justify-content: center;
+				display: flex;
+			}
+			#opinion{ /*id que contiene cada una de las columnas de las opiniones*/
+				font-family: "ptserif", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+				width:15%;
+				text-align: left;
+				height: 300px;
+				font-size: 120%;
+				margin: 0px 30px 20px 0px;
+				flex-direction: column;
+			}
+			#persona_opinion{ /*id aplicado a cada uno de las opiniones*/
+				width: 100%;
+				padding-top: 5%;
+				padding-left: 10%; 
+				display: flex;
+			}
+			#foto_opinion{
+				width: 50px;
+				height: 50px;
+				margin-right: 10px;
+			}
+			/*div7 (cuasadricula de imagenes)*/
+			.fila_cuadricula{
+				display: flex;
+			}
+
+			#foto_cuadricula >a>img{ /*esto afectara a las imagenes que esten dentro de las fotos de la cuadricuka*/
+				width: 100%;
+				height: 100%;
+				transition: 0.5s; /* tiempo de duracion que tardara en realizarse el efecto del hover */
+			}
+
+			#foto_cuadricula >a>img:hover{ /*efecto hover que se le realizará a las imagenes de la cuadricula*/
+				width: 140px;
+				height: 140px;
+				padding: 20px;
+			}
+
+			/*div 7*/
+			#banner{
+					width: 100%;
+					height: 800px;
+					background-color: black;
+					color: white;
+					text-align: center;
+					margin: 0px 0px 0px 0px;
+					font-family: "asap", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+
+			}
+			form{ /* formulario utilizado para pedir el correo*/
+				margin-top:50px;
+				margin-bottom: 100px;
+			}
+
+			form > input{ /*propiedades que le aplicaremos paraa que se vea el formulario correctamente*/
+				background: transparent;
+				font-size: 18px;
+				padding: 10px;
+				text-align: left;
+				border:none;
+				color:#f3f5f7;
+				border-bottom: solid;
+				border-color: #f3f5f7;
+				width: 20%;
+				
+			}
+			.listas{ /*contiene las propiedades del div que contiene las tres listas*/
+				display: flex;
+				margin-bottom: 100px;
+
+			}
+			.lista1{
+				font-family: "asap", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+				list-style-type:none;
+				width: 33.3%;
+				height: auto;
+				text-align: right;
+			}
+			.lista1>ul, .lista2>ul, .lista3>ul{
+				list-style-type:none;
+
+			}
+			.lista2{
+				font-family: "asap", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+				width: 33.3%;
+				height: auto;	
+				justify-content: center;
+			}
+
+			.lista3{
+				font-family: "asap", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+				width: 33.3%;
+				height: auto;	
+				text-align: left;
+				transition: 1s;
+			}
+			.listas>ul{
+				list-style-type:none;
+			
+			}
+			#estilo_lista{ /* tipo de letra de las listas del ultimo div */
+				margin-bottom:  20px;
+				transition: 0.2s;
+				font-size: 17px;
+			}
+			i{
+				border-bottom: solid;
+				border-color: #f3f5f7;
+				padding: 10px;
+				color:#aaa;
+				font-size:25px;
+			}
+			form> i:hover{ /*efecto de hover del raton con el icono con bordes rojos */
+				color: #e10339;
+				border: solid;
+				border-color: #e10339;
+			}
+			@media screen and (max-width: 780px){ /* cambios para cuando cambiamos de resolucion */
+				#mainmenu{ /*para que desaparezca el menu*/
+					display: none;
+				}
+
+				.logo>img{ /*con esto haremos mas grande laimagen del logo*/		
+					width: 1000px;
+					height: auto;
+
+				}
+				.logo{
+				width: 50%;
+				margin: auto;
+			
+				}
+
+				#degradado{ /*lo utilizaremos para dar direccion en columna*/
+					display: block;
+					height: auto;
+				}
+				#parte_hombre{ /* parte del div 2 que contiene la imagen del hombre*/
+					width: 90%;
+					margin: 0;
+					padding: 0;
+					height: auto;
+
+				}
+				.texto_degradado{ /*parte del div 2 que ccontiene el texto*/
+					width: 90%;
+					height: 350px;
+					background-color: white;
+					margin:0;
+					padding: 30px;
+				}
+				#ordenador{
+					height: auto;
+				}
+				.texto_degradad>p{
+					margin-bottom:  50px;
+				}
+				#fotos{ /*para que el div 3 se ponga en columna */
+					flex-direction: column;
+					height: auto;
+				}
+
+				.alineacion_derecha{
+					height: auto;
+					width: 100%;
+					text-align: left;
+				}
+
+				.imagen_ordenador{
+
+					height: auto;
+					width: 100%;
+					align-content: center;	
+
+				}
+
+				.texto5{ /*parte del texto del div 4*/
+					width: 100%;
+					height: auto;
+					margin: 0px;
+				}
+				.texto5>button {/*cuando la resolucion sea menor haremos que el boton se alargue mas*/
+					width: 70%;
+				}
+				.hombre_fotos{ /*foto del hombre del div 4*/
+					width: 70%;
+					height: auto;
+					margin-top: 200px;
+					background-size: cover;
+				}
+				/*formulario del footer, que lo alargaremos*/
+				form{
+					width: 70%;
+				}
+				form > input{
+					width: 70%;
+				}
+
+				.contenido_columnas{
+					flex-direction: column;
+					height: auto;
+				}
+				.columna_izqda{
+					margin: 0;
+				}
+				.opiniones{
+					height: auto;
+				}
+				/*responsive de la cuadricula*/
+
+				.fila_cuadricula{
+					width: 100%;
+				}
+				#foto_cuadricula{
+					width: 50%;
+				}
+				#foto_cuadricula >a>img:hover{ /*efecto hover que se le realizará a las imagenes de la cuadricula*/
+					width: 50%;
+					height: auto;
+					padding: 20px;
+				}
+				/*responsives opiniones*/
+				#titulo_clientes{
+					margin:0;
+					font-size: 100px;
+				}
+				#opinion{
+					width: 100%;
+					margin-bottom: 150px;
+				}
+				#opiniones_flexibles{
+
+					flex-direction: column;
+					width: auto;
+					height: auto;
+
+				}
+
+				.contenido{
+					flex-direction: column;
+				}
+			}
+			#foto_cuadricula{
+				width: 12.5%;
+				margin: 0px
+		</style>
+
+	</head>
+	<body>
+		<div class="chica"> <!-- div1 -->
+			<nav>
+				<div class="logo">
+				<img src="./images/logo.svg" >
+				</div>
+				<ul id="mainmenu">
+					<li class="active"><a href="#">home</a></li>
+					<li class="dropdown"><a href="#">features <i class="fa fa-angle-down" id="icono_menu"></i></a>
+						<ul class="dropdown-content">
+							<li><a href="#" class="enlaces_menu" id="primero">OVERVIEW</a></li>
+							<li><a href="#" class="enlaces_menu">PARTICLES</a></li>
+							<li><a href="#" class="enlaces_menu">TYPOGRAPHY</a></li>
+							<li><a href="#" class="enlaces_menu">BLOCK VARIATONS</a></li>
+							<li><a href="#" class="enlaces_menu">DOCUMENTATIONS</a></li>
+							<li><a href="#" class="enlaces_menu">FORUM SUPPORT</a></li>
+							<li><a href="#" class="enlaces_menu" id="ultimo">DOWLOAD</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown" ><a href="#">pages<i class="fa fa-angle-down" id="icono_menu"></i> </a>
+							<ul class="dropdown-content">
+								<div class="columnas_menu">
+
+									<div class="columnas_menu">
+										<div class="columna_menu">
+											<li><a href="#" class="enlaces_menu" id="arriba_izqda">CONTACT</a></li>
+											<li><a href="#" class="enlaces_menu">ERROR</a></li>
+											<li><a href="#" class="enlaces_menu">COMIG SOON</a></li>
+											<li><a href="#" class="enlaces_menu" id="abajo_izqda">ONLINE</a></li>
+										</div>
+										<div>
+											<li><a href="#" class="enlaces_menu" id="arriba_dcha">CONTACT</a></li>
+											<li><a href="#" class="enlaces_menu">ERROR</a></li>
+											<li><a href="#" class="enlaces_menu">COMIG SOON</a></li>
+											<li><a href="#" class="enlaces_menu" id="abajo_dercha">ONLINE</a></li>
+										</div>
+									</div>
+								</div>
+							</ul>
+					</li>
+						
+					<li class="dropdown" ><a href="#">styles <i class="fa fa-angle-down"id="icono_menu"></i></a>
+						<ul class="dropdown-content_imagenes"id="ajustar">
+							<div id="flexible">
+								<div id="margen_foto_menu">
+									<li><img src="./images/preset1.JPG"></li>
+								</div>
+								<div id="margen_foto_menu">
+									<li><img src="./images/preset2.JPG"></li>
+								</div>
+							</div>
+							<div id="flexible">
+								<div id="margen_foto_menu">
+									<li><img src="./images/preset3.JPG"></li>
+								</div>
+								<div id="margen_foto_menu">							
+									<li><img src="./images/preset4.JPG"></li>	
+								</div>
+							</div>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div>
+				<a href="#" class="Enlace_texto"> Clarity is a beautifoul mobile-first design featuring <br> incredible typography, color and imagery </a>
+				<p class="texto1">Dozens of particles make creating a stunning website that caters to your content <br> easy. Your website will look perfect on mobile and desktop.</p>
+				<a href="#" class="Enlace_rojo"> Learn more</a>
+			</div>
+
+		</div>
+		<section id="degradado"> <!-- div 2-->
+			<div id="parte_hombre">
+				<img src="./images/Hombre.JPG" class="Imagen_hombre">
+			</div >
+			<div class="texto_degradado">
+
+				<h2>MOBILE FIRST</h2>
+				<p>The majority of the world’s internet traffic now occurs from smartphones and other mobile platforms.</p>
+				<p class="grisclaro">Clarity takes a mobile-first approach to design, without sacrificing on its full-featured desktop user experience. Visitors will enjoy a natural user experience that works perfectly on any screen.</p>
+				
+			</div>
+
+		</section> <!--div 3-->
+
+		<section id="ordenador">
+			<h1 style="color: white; margin: 100px 0px 0px 0px">Gantry 5 Framework</h1>
+			<p class="texto_blanco">Gantry 5 is a powerful, infinitely flexible framework for Joomla, WordPress, and Grav <br> that makes customizing your website easier than ever.</p>
+			<div class="contenido">
+				<div class=" alineacion_derecha">
+					<h3>LAYOUT MANAGER</h3>
+					<p id="texto1" class=" color7 "   style=" margin: 0px 0px 90px 0px ">Create gorgeous page layouts with <br>drag-and-drop simplicity.</p>
+					<h3> MENU EDITOR</h3>
+					<p id="texto1" class="color7 ">Arrange, configure, and customize <br>your site’s menus in seconds.</p>
+				</div>
+				<div class=" imagen_ordenador">
+					<a href="#"> <img src="./images/Ordenador.JPG" style="height: 500px; width: 100%; margin: auto;"></a>
+					<button class="button boton_rojo"><b>Learn More</b></button>
+
+				</div>
+
+				<div class="alineación_izqda">
+					<h3 >INHERITANCE</h3>
+					<p id="texto1 " class="color7" style=" margin: 0px 0px 90px 0px ">Save time by managing common <br> elements using inheritance.</p>
+					<h3 > PARTICLES</h3>
+					<p id="texto1" class="color7">Add pre-designed content blocks <br> and populate them with ease</p>					
+
+
+				</div>
+			</div>
+		</section>
+
+		<section id="fotos">  <!-- div 4-->
+
+
+			<div class="texto5">
+				<h5 class="letra_Texto5" >VERTICAL SLIDESHOW</h5>
+				<h3 class="letra_Texto5">Give your photos the attention they deserve <br> with Clarity’s Vertical Slideshow particle.</h3>
+				<p id="texto1 colora" class="letra_Texto5">Not only can you add your own photos directly to the particle, but you can also pull photos and titles directly from your site’s content.</p>
+				<button class="button boton_negro letra_Texto5"><b>Get started</b></button>
+			</div>
+			<div class="hombre_fotos">
+
+					<h2 style="margin: 350px 250px 0px 0px; color: white;">More photos</h2>	
+			</div>
+
+		</section>
+		<div id="titulaso">
+				<h1 style="margin-top: 0px;">Included Particles</h1>
+		</div>
+
+		<section class="contenido_columnas"><!-- div 5-->
+
+
+			
+			<div class="columna_izqda" >
+				<a href="#"> <div style="margin-bottom: 50px;">
+					 <img src="./images/CuadroRaro.JPG">
+					 <p class="enlace_fotos">create beautifoul price displays in minutes using pricing <br>Table.</p>
+					 <p class="grisa">July 20,2020</p>
+
+					</div>
+				</a>
+
+				<a href="#"> <div>
+					 <img src="./images/Numero6.JPG">
+					 <p class="enlace_fotos">Promote your social media pages using the social and social <br> Feed particles</p>
+					 <p class="grisa">Agoust 03,2020</p>
+
+					</div>
+				</a>
+			</div>
+
+			<div class="columna"> 
+				<a href="#"> <div style="margin-bottom: 50px;">
+					 <img src="./images/Beer.JPG">
+					 <p class="enlace_fotos">Bring attention to important numbers with Grid Statistic</p>
+					 <p class="grisa">July 27,2020</p>
+
+					</div>
+				</a>
+
+				<a href="#"> <div style="margin-bottom: 50px;">
+					 <img src="./images/raro.JPG">
+					 <p class="enlace_fotos">Showcase your images with Clarity´s Image Grid</p>
+					 <p class="grisa">August 10,2020</p>
+
+					</div>
+				</a>
+
+				<a href="#"> <div>
+					 <img src="./images/850.JPG">
+					 <p class="enlace_fotos">Grow your newsletter suscribe base whiththe powerful <br> Newsletter particle</p>
+					 <p class="grisa">August 24,2020</p>
+
+					</div>
+				</a>
+			</div>
+		</section>
+
+		<section class="opiniones"> <!-- div 6-->
+
+				<h1 id="titulo_clientes" >OUR CLIENTS</h1>
+
+			
+
+			<div id="opiniones_flexibles">
+				
+
+				<div id="opinion">
+						 
+					<p>RocketTheme has been producing exceptional templates and themes for over a decade, and Clarity is the best yet.</p>
+					<div id="persona_opinion">
+						<div id="foto_opinion">
+							<img src="./images/willie.JPG">
+						</div>	
+						<div id="nombre_opinion">
+							<p>Willie Ryan
+								<span style="display: block; color: #aaa ;font-size: 15px">CEO of Company Inc.</span> <!-- con un id no funciona!! -->
+							</p>
+						</div>
+					</div>
+
+					<p>RocketTheme’s support forums are second to none. The Rockettheme team is ready to answer your most challenging questions.</p>
+					<div id="persona_opinion">
+						<div id="foto_opinion">
+							<img src="./images/Beverly2.JPG">
+						</div>	
+						<div id="nombre_opinion">
+							<p>Beverly foster
+								<span style="display: block; color: #aaa ;font-size: 15px">CEO of Company Inc.</span> <!-- con un id no funciona!! -->
+							</p>
+						</div>
+					</div>
+
+				</div>
+				<div id="opinion">
+					<p>With Clarity’s bold color presets and wide range of included particles, it has never been easier to get started!</p>
+					<div id="persona_opinion">
+						<div id="foto_opinion">
+							<img src="./images/Beverly.JPG">
+						</div>	
+						<div id="nombre_opinion">
+							<p>Beverly foster
+								<span style="display: block; color: #aaa ;font-size: 15px">CEO of Company Inc.</span> <!-- con un id no funciona!! -->
+							</p>
+						</div>
+					</div>						
+
+					<p>Have multiple website builds in mind? RocketTheme makes site licensing easy with Club membership plans to meet your needs.</p>
+					<div id="persona_opinion">
+						<div id="foto_opinion">
+							<img src="./images/Dorothy2.JPG">
+						</div>	
+						<div id="nombre_opinion">
+							<p>Dorothy Ferguson
+								<span style="display: block; color: #aaa ;font-size: 15px">CEO of Company Inc.</span> <!-- con un id no funciona!! -->
+							</p>
+						</div>
+					</div>
+
+				</div>
+				<div id="opinion">
+					<p>Gantry 5 is a cutting-edge theming framework made for Joomla, Wordpress, and Grav.</p>
+					<div id="persona_opinion">
+						<div id="foto_opinion">
+							<img src="./images/Dorothy.JPG">
+						</div>	
+						<div id="nombre_opinion">
+							<p>Dorothy Ferguson
+								<span style="display: block; color: #aaa ;font-size: 15px">CEO of Company Inc.</span> <!-- con un id no funciona!! -->
+							</p>
+						</div>
+					</div>
+
+					<p>Whether you’re building a new blog or a corporate website for a large enterprise, Clarity’s versatile design has you covered.</p>
+					<div id="persona_opinion">
+						<div id="foto_opinion">
+							<img src="./images/williw_mujer2.JPG">
+						</div>	
+						<div id="nombre_opinion">
+							<p>Willie Ryan
+								<span style="display: block; color: #aaa ;font-size: 15px">CEO of Company Inc.</span> <!-- con un id no funciona!! -->
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div id="opinion">
+						
+					<p>With Clarity’s RocketLauncher, you can create a new website in no time, complete with demo content to start from</p>
+					<div id="persona_opinion">
+						<div id="foto_opinion">
+							<img src="./images/willie_mujer.JPG">
+						</div>	
+						<div id="nombre_opinion">
+							<p>Willie Ryan
+								<span style="display: block; color: #aaa ;font-size: 15px">CEO of Company Inc.</span> <!-- con un id no funciona!! -->
+							</p>
+						</div>
+					</div>
+
+					<p>Every RocketTheme product is made to last. Your website will look and work years from now as well as it does on day one</p>
+					<div id="persona_opinion">
+						<div id="foto_opinion">
+							<img src="./images/Beverly3.JPG">
+						</div>	
+						<div id="nombre_opinion">
+							<p>Beverly foster
+								<span style="display: block; color: #aaa ;font-size: 15px">CEO of Company Inc.</span> <!-- con un id no funciona!! -->
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+
+		<section class="cuadricula">
+
+			<div class="fila_cuadricula">
+
+				<div id="foto_cuadricula">
+					<a href="#" title="imagen 1">
+						<img src="./images/foto1.JPG" alt="imagen 1">
+					</a>
+				</div>
+				<div id="foto_cuadricula" title="imagen 2">
+					<a href="#">
+						<img src="./images/foto2.JPG" alt="imagen 2">
+					</a>
+				</div>
+				<div id="foto_cuadricula" title="imagen 3">
+
+					<a href="#">
+						<img src="./images/foto3.JPG" alt="imagen 3">
+					</a>
+
+				</div>
+				<div id="foto_cuadricula" title="imagen 4">
+					<a href="#">
+						<img src="./images/foto4.JPG" alt="imagen 4">
+					</a>
+				</div>
+				<div id="foto_cuadricula" title="imagen 5">
+				<a href="#">
+					<img src="./images/foto5.JPG" alt="imagen 5">
+				</a>	
+				</div>
+				<div id="foto_cuadricula" title="imagen 6">
+				<a href="#">
+					<img src="./images/foto6.JPG" alt="imagen 6">
+				</a>	
+				</div>
+				<div id="foto_cuadricula" title="imagen 7">
+				<a href="#">
+					<img src="./images/foto7.JPG">
+				</a>
+				</div>
+				<div id="foto_cuadricula" title="imagen 8">
+				<a href="#">
+					<img src="./images/foto8.JPG" alt="imagen8">
+				</a>	
+				</div>
+
+			</div>
+			
+
+			<div class="fila_cuadricula">
+				<div id="foto_cuadricula">
+				<a href="#" title="foto 9">
+					<img src="./images/foto9.JPG" alt="foto 9">
+				</a>	
+				</div>
+				<div id="foto_cuadricula">
+				<a href="#" title="foto 10">	
+					<img src="./images/foto10.JPG" alt="foto 10">
+				</a>
+				</div>
+				<div id="foto_cuadricula">
+				<a href="#" title="foto 11">					
+					<img src="./images/foto11.JPG" alt="foto 11">
+				</a>
+				</div>
+				<div id="foto_cuadricula">
+				<a href="#" title="foto 12">	
+					<img src="./images/foto12.JPG" alt="foto 12">
+				</a>
+				</div>
+				<div id="foto_cuadricula">
+				<a href="#" title="foto 13">	
+					<img src="./images/foto13.JPG" alt="foto 13">
+				</a>
+				</div>
+				<div id="foto_cuadricula">
+				<a href="#" title="foto 14">	
+					<img src="./images/foto14.JPG">
+				</a>	
+				</div>
+				<div id="foto_cuadricula">
+				<a href="#" title="foto 15">	
+					<img src="./images/foto15.JPG">
+				</a>					
+				</div>
+				<div id="foto_cuadricula">
+					<a href="#" title="foto 16">
+						<img src="./images/foto16.JPG">
+					</a>
+				</div>
+
+			</div>
+
+
+			<div class="fila_cuadricula">
+				<div id="foto_cuadricula">
+					<a href="#" title="foto 17">	
+						<img src="./images/foto17.JPG">
+					</a>
+				</div>
+				<div id="foto_cuadricula">
+				<a href="#" title="foto 18">
+					<img src="./images/foto18.JPG">
+				</a>
+
+				</div>
+				<div id="foto_cuadricula">
+					<a href="#" title="foto 19">
+						<img src="./images/foto19.JPG">
+					</a>
+				</div>
+				<div id="foto_cuadricula">
+					<a href="#" title="foto 20">
+						<img src="./images/foto20.JPG">
+					</a>
+				</div>
+				<div id="foto_cuadricula">
+				<a href="#" title="foto 21">	
+					<img src="./images/foto21.JPG">
+				</a>
+				</div>
+				<div id="foto_cuadricula">
+				<a href="#" title="foto 22">	
+					<img src="./images/foto22.JPG">
+				</a>
+				</div>
+				<div id="foto_cuadricula">
+				<a href="#" title="foto 23">	
+					<img src="./images/foto23.JPG">
+				</a>
+				</div>
+				<div id="foto_cuadricula">
+					<a href="#" title="foto 24">	
+						<img src="./images/foto24.JPG">
+					</a>
+				</div>
+
+			</div>
+
+		</section>
+		<footer id="banner">
+			<div>
+				<h1 style="font-size: 500%"> <b>Newsletter Particle</b></h1>
+				<p style="font-size: 150%">Never miss another subscriber with our MailChimp-ready <br> newsletter particle, included with every copy of Clarity.</p>
+			</div>
+			<form action="/action_page.php" target="_blank" id="formulario">
+ 				 <input type="text" id="e-mail" name="e-mail" placeholder="your e-mail adress">
+ 				 <i class="fas fa-arrow-right"></i>
+ 			</form>
+
+	 		<div class="listas"> 
+
+	 			<div class="lista1">
+		 			<ul >
+		 				<li class="grisclaro"id="estilo_lista">About</li>
+		 				<li><a href="#" id="estilo_lista" >about rational</a></li>
+		  				<li><a href="#"id="estilo_lista" >our proyect</a></li>
+		  				<li><a href="#" id="estilo_lista">the team</a></li>
+		  				<li><a href="#" id="estilo_lista">jobs</a></li>
+		  				<li><a href="#" id="estilo_lista">blog</a></li>
+		  				<li><a href="#" >press</a></li>
+					</ul> 
+				</div>
+
+				<div class="lista2">
+					<ul>
+		 				<li class="grisclaro"id="estilo_lista">Contact</li>
+		  				<li><a href="#"id="estilo_lista" >our proyect</a></li>
+		  				<li><a href="#" id="estilo_lista">Contact</a></li>
+		  				<li><a href="#" id="estilo_lista">Helpcentre</a></li>
+		  				<li><a href="#" id="estilo_lista">our offices</a></li>
+		  				<li><a href="#" id="estilo_lista">Facebook</a></li>
+		  				<li><a href="#" id="estilo_lista">Twitter</a></li>
+		  				<li><a href="#" >Instagram</a></li>
+					</ul> 
+				</div>
+				<div class="lista3">
+					<ul>
+		 				<li class="grisclaro" id="estilo_lista">Online</li>
+		  				<li><a href="#" id="estilo_lista">Live chat</a></li>
+		  				<li><a href="#" id="estilo_lista">(401) 123-4578</a></li>
+		  				<li><a href="#" id="estilo_lista">send us an email</a></li>
+		  				<li><a href="#">FAQ</a></li>
+
+					</ul> 
+				</div>	
+			</div>
+
+			<p class="grisclaro"> &copy 2020 ALL RIGHTS RESERVED. DESIGNED & DEVELOPED BY ROCKETTHEME.</p>
+
+ 		</footer>
+
+
+	</body>
+</html>
